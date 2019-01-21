@@ -1,0 +1,53 @@
+%header.mdc-toolbar.mdc-elevation--z4.mdc-toolbar--fixed
+  .mdc-toolbar__row
+    
+    %section.mdc-toolbar__section.mdc-toolbar__section--align-start
+      %a.menu-toggler.material-icons.mdc-toolbar__menu-icon{:href => "#"} menu
+      %span.mdc-toolbar__input
+        .mdc-text-field
+          %input#css-only-text-field-box.mdc-text-field__input{:placeholder => "Search anything...", :type => "text"}/
+    
+    %section.mdc-toolbar__section.mdc-toolbar__section--align-end{:role => "toolbar"}
+      .mdc-menu-anchor
+        
+        %a.mdc-toolbar__icon.toggle.mdc-ripple-surface{"data-mdc-auto-init" => "MDCRipple", "data-toggle" => "dropdown", :href => "#", "toggle-dropdown" => "notification-menu"}
+          %i.material-icons notifications
+          %span.dropdown-count 3
+        
+        #notification-menu.mdc-simple-menu.mdc-simple-menu--right{:tabindex => "-1"}
+          
+          %ul.mdc-simple-menu__items.mdc-list{"aria-hidden" => "true", :role => "menu"}
+            
+            %li.mdc-list-item{:role => "menuitem", :tabindex => "0"}
+              %i.material-icons.mdc-theme--primary.mr-1 email
+              One unread message
+            
+            %li.mdc-list-item{:role => "menuitem", :tabindex => "0"}
+              %i.material-icons.mdc-theme--primary.mr-1 group
+              One event coming up
+            
+            %li.mdc-list-item{:role => "menuitem", :tabindex => "0"}
+              %i.material-icons.mdc-theme--primary.mr-1 cake
+              It's Aleena's birthday!
+      
+      .mdc-menu-anchor
+        
+        %a.mdc-toolbar__icon.mdc-ripple-surface{"data-mdc-auto-init" => "MDCRipple", :href => "#"}
+          %i.material-icons widgets
+      
+      .mdc-menu-anchor.mr-1
+        
+        %a.mdc-toolbar__icon.toggle.mdc-ripple-surface{"data-mdc-auto-init" => "MDCRipple", "data-toggle" => "dropdown", :href => "#", "toggle-dropdown" => "logout-menu"}
+          %i.material-icons more_vert
+        
+        #logout-menu.mdc-simple-menu.mdc-simple-menu--right{:tabindex => "-1"}
+          
+          %ul.mdc-simple-menu__items.mdc-list{"aria-hidden" => "true", :role => "menu"}
+            
+            %li.mdc-list-item{:role => "menuitem", :tabindex => "0"}
+              %i.material-icons.mdc-theme--primary.mr-1 settings
+              Settings
+            
+            %li.mdc-list-item{:role => "menuitem", :tabindex => "0"}
+              %i.material-icons.mdc-theme--primary.mr-1 power_settings_new
+              Logout

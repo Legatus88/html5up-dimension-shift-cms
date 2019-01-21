@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Html5upDimensionShiftCms
   class Application < Rails::Application
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
     # Ensuring that ActiveStorage routes are loaded before Comfy's globbing
     # route. Without this file serving routes are inaccessible.
     config.railties_order = [ActiveStorage::Engine, :main_app, :all]

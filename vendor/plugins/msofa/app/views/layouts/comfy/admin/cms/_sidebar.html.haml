@@ -1,0 +1,84 @@
+%aside.mdc-persistent-drawer.mdc-persistent-drawer--open
+  %nav.mdc-persistent-drawer__drawer
+  
+    .mdc-persistent-drawer__toolbar-spacer
+      %a.brand-logo{:href => "index.html"}
+        %img{:alt => "logo", :src => "/assets/logo.svg"}/
+  
+    .mdc-list-group
+      %nav.mdc-list.mdc-drawer-menu
+  
+        .mdc-list-item.mdc-drawer-item
+          %a.mdc-drawer-link{:href => "index.html"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            Dashboard
+  
+        .mdc-list-item.mdc-drawer-item
+          %a.mdc-drawer-link{:href => "pages/forms/basic-forms.html"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            Forms
+  
+        .mdc-list-item.mdc-drawer-item{"data-toggle" => "expansionPanel", :href => "#", "target-panel" => "ui-sub-menu"}
+          %a.mdc-drawer-link{:href => "#"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            UI Features
+            %i.mdc-drawer-arrow.material-icons
+       
+          #ui-sub-menu.mdc-expansion-panel
+            %nav.mdc-list.mdc-drawer-submenu
+       
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/ui-features/buttons.html"}
+                  Buttons
+       
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/ui-features/typography.html"}
+                  Typography
+       
+        .mdc-list-item.mdc-drawer-item
+          %a.mdc-drawer-link{:href => "pages/ui-features/tables.html"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            Tables
+       
+        .mdc-list-item.mdc-drawer-item
+          %a.mdc-drawer-link{:href => "pages/charts/chartjs.html"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            Charts
+        
+        .mdc-list-item.mdc-drawer-item{"data-toggle" => "expansionPanel", :href => "#", "target-panel" => "sample-page-submenu"}
+        
+          %a.mdc-drawer-link{:href => "#"}
+            %i.material-icons.mdc-list-item__start-detail.mdc-drawer-item-icon{"aria-hidden" => "true"}
+            Sample Pages
+            %i.mdc-drawer-arrow.material-icons
+        
+          #sample-page-submenu.mdc-expansion-panel
+            %nav.mdc-list.mdc-drawer-submenu
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/blank-page.html"}
+                  Blank Page
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/403.html"}
+                  403
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/404.html"}
+                  404
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/500.html"}
+                  500
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/505.html"}
+                  505
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/login.html"}
+                  Login
+        
+              .mdc-list-item.mdc-drawer-item
+                %a.mdc-drawer-link{:href => "pages/samples/register.html"}
+                  Register

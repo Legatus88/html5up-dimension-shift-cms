@@ -36,5 +36,9 @@
 //= require comfy/admin/cms/slugify
 //= require comfy/admin/cms/timepicker
 //= require comfy/admin/cms/wysiwyg
+//= require comfy/admin/cms/chart
+//= require comfy/admin/cms/material
+//= require comfy/admin/cms/misc
+//= require comfy/admin/cms/dashboard
 
 //= require comfy/admin/cms/custom
