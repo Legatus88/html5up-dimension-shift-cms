@@ -1,0 +1,138 @@
+.page-wrapper.mdc-toolbar-fixed-adjust
+  %main.content-wrapper
+    .mdc-layout-grid
+      .mdc-layout-grid__inner
+        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-6
+          .mdc-card
+            %section.mdc-card__primary
+              %h1.mdc-card__title.mdc-card__title--large Switch
+            %section.mdc-card__supporting-text
+              .template-demo
+                .mdc-switch
+                  %input#basic-switch.mdc-switch__native-control{:type => "checkbox"}/
+                  .mdc-switch__background
+                    .mdc-switch__knob
+                .mdc-switch.mdc-switch--disabled
+                  %input#another-basic-switch.mdc-switch__native-control{:disabled => "disabled", :type => "checkbox"}/
+                  .mdc-switch__background
+                    .mdc-switch__knob
+        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-6
+          .mdc-card
+            %section.mdc-card__primary
+              %h1.mdc-card__title.mdc-card__title--large Select Menu
+            %section.mdc-card__supporting-text
+              .template-demo
+                #hero-js-select.mdc-select{:role => "listbox"}
+                  .mdc-select__surface{:tabindex => "0"}
+                    .mdc-select__label Pick a Food Group
+                    .mdc-select__selected-text
+                    .mdc-select__bottom-line
+                  .mdc-simple-menu.mdc-select__menu
+                    %ul.mdc-list.mdc-simple-menu__items
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Bread, Cereal, Rice, and Pasta
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Vegetables
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Fruit
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Milk, Yogurt, and Cheese
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                      %li.mdc-list-item{:role => "option", :tabindex => "0"}
+                        Fats, Oils, and Sweets
+        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
+          .mdc-card
+            %section.mdc-card__primary
+              %h1.mdc-card__title.mdc-card__title--large Text Field
+            %section.mdc-card__supporting-text
+              .mdc-layout-grid__inner
+                .mdc-layout-grid__cell.mdc-layout-grid__cell--span-4-desktop
+                  .template-demo
+                    #demo-tf-box-wrapper
+                      #tf-box-example.mdc-text-field.mdc-text-field--box.w-100
+                        %input#tf-box.mdc-text-field__input{"aria-controls" => "name-validation-message", :pattern => ".{8,}", :required => "", :type => "text"}/
+                        %label.mdc-text-field__label{:for => "tf-box"} Your Name
+                        .mdc-text-field__bottom-line
+                      %p#name-validation-msg.mdc-text-field-helper-text.mdc-text-field-helper-text--validation-msg
+                        Must be at least 8 characters
+                .mdc-layout-grid__cell.mdc-layout-grid__cell--span-4-desktop
+                  .template-demo
+                    #demo-tf-box-leading-wrapper
+                      #tf-box-leading-example.mdc-text-field.mdc-text-field--box.mdc-text-field--with-leading-icon.w-100
+                        %i.material-icons.mdc-text-field__icon{:tabindex => "0"} event
+                        %input#tf-box-leading.mdc-text-field__input{:type => "text"}/
+                        %label.mdc-text-field__label{:for => "tf-box-leading"} Your name
+                        .mdc-text-field__bottom-line
+        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
+          .mdc-card
+            %section.mdc-card__primary
+              %h1.mdc-card__title.mdc-card__title--large Checkbox
+            %section.mdc-card__supporting-text
+              .template-demo
+                .mdc-form-field
+                  .mdc-checkbox
+                    %input#basic-checkbox.mdc-checkbox__native-control{:type => "checkbox"}/
+                    .mdc-checkbox__background
+                      %svg.mdc-checkbox__checkmark{:viewbox => "0 0 24 24"}
+                        %path.mdc-checkbox__checkmark__path{:d => "M1.73,12.91 8.1,19.28 22.79,4.59", :fill => "none", :stroke => "white"}
+                      .mdc-checkbox__mixedmark
+                  %label{:for => "basic-checkbox"} Default
+                .mdc-form-field
+                  .mdc-checkbox.mdc-checkbox--disabled
+                    %input#basic-disabled-checkbox.mdc-checkbox__native-control{:disabled => "disabled", :type => "checkbox"}/
+                    .mdc-checkbox__background
+                      %svg.mdc-checkbox__checkmark{:viewbox => "0 0 24 24"}
+                        %path.mdc-checkbox__checkmark__path{:d => "M1.73,12.91 8.1,19.28 22.79,4.59", :fill => "none", :stroke => "white"}
+                      .mdc-checkbox__mixedmark
+                  %label{:for => "basic-disabled-checkbox"} Disabled
+                .mdc-form-field
+                  .mdc-checkbox
+                    %input#basic-indeterminate-checkbox.mdc-checkbox__native-control{:type => "checkbox"}/
+                    .mdc-checkbox__background
+                      %svg.mdc-checkbox__checkmark{:viewbox => "0 0 24 24"}
+                        %path.mdc-checkbox__checkmark__path{:d => "M1.73,12.91 8.1,19.28 22.79,4.59", :fill => "none", :stroke => "white"}
+                      .mdc-checkbox__mixedmark
+                  %label{:for => "basic-indeterminate-checkbox"} Indeterminate
+                .mdc-form-field
+                  .mdc-checkbox.demo-checkbox--custom-all
+                    %input#basic-custom-checkbox-all.mdc-checkbox__native-control{:type => "checkbox"}/
+                    .mdc-checkbox__background
+                      %svg.mdc-checkbox__checkmark{:viewbox => "0 0 24 24"}
+                        %path.mdc-checkbox__checkmark__path{:d => "M1.73,12.91 8.1,19.28 22.79,4.59", :dropzone => "", :fill => "none", :stroke => "white"}
+                      .mdc-checkbox__mixedmark
+                  %label{:for => "basic-custom-checkbox-all"} Custom colored
+        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
+          .mdc-card
+            %section.mdc-card__primary
+              %h1.mdc-card__title.mdc-card__title--large Radio
+            %section.mdc-card__supporting-text
+              .template-demo
+                .mdc-form-field
+                  .mdc-radio{"data-mdc-auto-init" => "MDCRipple"}
+                    %input#ex0-default-radio1.mdc-radio__native-control{:checked => "checked", :name => "ex0-default", :type => "radio"}/
+                    .mdc-radio__background
+                      .mdc-radio__outer-circle
+                      .mdc-radio__inner-circle
+                  %label#ex0-default-radio1-label{:for => "ex0-default-radio1"} Default Radio 1
+                .mdc-form-field
+                  .mdc-radio{"data-mdc-auto-init" => "MDCRipple"}
+                    %input#ex0-default-radio2.mdc-radio__native-control{:name => "ex0-default", :type => "radio"}/
+                    .mdc-radio__background
+                      .mdc-radio__outer-circle
+                      .mdc-radio__inner-circle
+                  %label#ex0-default-radio2-label{:for => "ex0-default-radio2"} Default Radio 2
+                .mdc-form-field
+                  .mdc-radio.demo-radio--custom
+                    %input#ex1-custom-radio1.mdc-radio__native-control{:checked => "checked", :name => "ex1-custom", :type => "radio"}/
+                    .mdc-radio__background
+                      .mdc-radio__outer-circle
+                      .mdc-radio__inner-circle
+                  %label#ex1-custom-radio1-label{:for => "ex1-custom-radio1"} Custom Radio 1
+                .mdc-form-field
+                  .mdc-radio.demo-radio--custom
+                    %input#ex1-custom-radio2.mdc-radio__native-control{:name => "ex1-custom", :type => "radio"}/
+                    .mdc-radio__background
+                      .mdc-radio__outer-circle
+                      .mdc-radio__inner-circle
+                  %label#ex1-custom-radio2-label{:for => "ex1-custom-radio2"} Custom Radio 2

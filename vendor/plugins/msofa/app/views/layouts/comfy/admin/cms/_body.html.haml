@@ -1,13 +1,25 @@
 %body#comfy{class: "c-#{params[:controller].parameterize} a-#{params[:action].parameterize}"}
 
-  .container-fluid
-    .row
-      = render "layouts/comfy/admin/cms/sidebar"
-      = render "layouts/comfy/admin/cms/navbar"
-      /= render "layouts/comfy/admin/cms/left"
-      #cms-main.col-lg-8.m-auto
-        = render "layouts/comfy/admin/cms/flash"
-        = yield
-        = render 'comfy/admin/cms/files/modal' if @site && !@site.new_record?
-
+  .body-wrapper
+    = render "layouts/comfy/admin/cms/sidebar"
+    = render "layouts/comfy/admin/cms/navbar"
+    /= render "layouts/comfy/admin/cms/left"
+    /#cms-main.col-lg-8.m-auto
+    /.page-wrapper.mdc-toolbar-fixed-adjust
+    /  %main.content-wrapper
+    /    .mdc-layout-grid
+    /      .mdc-layout-grid__inner
+    /        .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
+    /          .mdc-card
+    /            .mdc-layout-grid__inner
+    /              .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-7
+    /                %section.purchase__card_section
+    /                  = render "layouts/comfy/admin/cms/flash"
+    /                  = yield
+    /                  = render 'comfy/admin/cms/files/modal' if @site && !@site.new_record?
+    
+    /= render 'layouts/comfy/admin/cms/forms'
+    = render 'layouts/comfy/admin/cms/new_forms'
   = render "layouts/comfy/admin/cms/footer_js"
+
+
