@@ -2,143 +2,171 @@
   %main.content-wrapper
     .mdc-layout-grid
       .mdc-layout-grid__inner
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-6
           .mdc-card
-            %form
-              .form-group
-                %label{:for => "exampleInputEmail1"} Email address
-                %input#exampleInputEmail1.form-control{"aria-describedby" => "emailHelp", :placeholder => "Enter email", :type => "email"}/
-                %small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
-              .form-group
-                %label{:for => "exampleInputPassword1"} Password
-                %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}/
-              .form-group.form-check
-                %input#exampleCheck1.form-check-input{:type => "checkbox"}/
-                %label.form-check-label{:for => "exampleCheck1"} Check me out
-              %button.btn.btn-primary{:type => "submit"} Submit
+            .section.mdc-card__primary
+              %form
+                .form-group
+                  %label{:for => "exampleInputEmail1"} Email address
+                  %input#exampleInputEmail1.form-control{"aria-describedby" => "emailHelp", :placeholder => "Enter email", :type => "email"}/
+                  %small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                .form-group
+                  %label{:for => "exampleInputPassword1"} Password
+                  %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}/
+                .form-group.form-check
+                  %input#exampleCheck1.form-check-input{:type => "checkbox"}/
+                  %label.form-check-label{:for => "exampleCheck1"} Check me out
+                %button.btn.btn-primary{:type => "submit"} Submit
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-6
           .mdc-card
-            %form
-              .form-group
-                %label{:for => "exampleFormControlInput1"} Email address
-                %input#exampleFormControlInput1.form-control{:placeholder => "name@example.com", :type => "email"}/
-              .form-group
-                %label{:for => "exampleFormControlSelect1"} Example select
-                %select#exampleFormControlSelect1.form-control
-                  %option 1
-                  %option 2
-                  %option 3
-                  %option 4
-                  %option 5
-              .form-group
-                %label{:for => "exampleFormControlSelect2"} Example multiple select
-                %select#exampleFormControlSelect2.form-control{:multiple => "multiple"}
-                  %option 1
-                  %option 2
-                  %option 3
-                  %option 4
-                  %option 5
-              .form-group
-                %label{:for => "exampleFormControlTextarea1"} Example textarea
-                %textarea#exampleFormControlTextarea1.form-control{:rows => "3"}
+            .section.mdc-card__primary
+              %form
+                .form-group
+                  %label{:for => "exampleFormControlInput1"} Email address
+                  %input#exampleFormControlInput1.form-control{:placeholder => "name@example.com", :type => "email"}/
+                .form-group
+                  %label{:for => "exampleFormControlSelect1"} Example select
+                  %select#exampleFormControlSelect1.form-control
+                    %option 1
+                    %option 2
+                    %option 3
+                    %option 4
+                    %option 5
+                .form-group
+                  %label{:for => "exampleFormControlSelect2"} Example multiple select
+                  %select#exampleFormControlSelect2.form-control{:multiple => "multiple"}
+                    %option 1
+                    %option 2
+                    %option 3
+                    %option 4
+                    %option 5
+                .form-group
+                  %label{:for => "exampleFormControlTextarea1"} Example textarea
+                  %textarea#exampleFormControlTextarea1.form-control{:rows => "3"}
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %form
-              .form-group
-                %label{:for => "exampleFormControlFile1"} Example file input
-                %input#exampleFormControlFile1.form-control-file{:type => "file"}/
+            .section.mdc-card__primary
+              %form
+                .form-group
+                  %label{:for => "exampleFormControlFile1"} Example file input
+                  %input#exampleFormControlFile1.form-control-file{:type => "file"}/
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %input.form-control.form-control-lg{:placeholder => ".form-control-lg", :type => "text"}/
-            %input.form-control{:placeholder => "Default input", :type => "text"}/
-            %input.form-control.form-control-sm{:placeholder => ".form-control-sm", :type => "text"}/
+            .section.mdc-card__primary
+              %input.form-control.form-control-lg{:placeholder => ".form-control-lg", :type => "text"}/
+              %input.form-control{:placeholder => "Default input", :type => "text"}/
+              %input.form-control.form-control-sm{:placeholder => ".form-control-sm", :type => "text"}/
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %select.form-control.form-control-lg
-              %option Large select
-            %select.form-control
-              %option Default select
-            %select.form-control.form-control-sm
-              %option Small select
+            .section.mdc-card__primary
+              %select.form-control.form-control-lg
+                %option Large select
+              %select.form-control
+                %option Default select
+              %select.form-control.form-control-sm
+                %option Small select
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %form
-              .form-group
-                %label{:for => "formControlRange"} Example Range input
-                %input#formControlRange.form-control-range{:type => "range"}/
+            .section.mdc-card__primary
+              %form
+                .form-group
+                  %label{:for => "formControlRange"} Example Range input
+                  %input#formControlRange.form-control-range{:type => "range"}/
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %input.form-control{:placeholder => "Readonly input here…", :readonly => "readonly", :type => "text"}/
+            .section.mdc-card__primary
+              %input.form-control{:placeholder => "Readonly input here…", :readonly => "readonly", :type => "text"}/
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %form
-              .form-group.row
-                %label.col-sm-2.col-form-label{:for => "staticEmail"} Email
-                .col-sm-10
-                  %input#staticEmail.form-control-plaintext{:readonly => "readonly", :type => "text", :value => "email@example.com"}/
-              .form-group.row
-                %label.col-sm-2.col-form-label{:for => "inputPassword"} Password
-                .col-sm-10
-                  %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}/
+            .section.mdc-card__primary
+              %form
+                .form-group.row
+                  %label.col-sm-2.col-form-label{:for => "staticEmail"} Email
+                  .col-sm-10
+                    %input#staticEmail.form-control-plaintext{:readonly => "readonly", :type => "text", :value => "email@example.com"}/
+                .form-group.row
+                  %label.col-sm-2.col-form-label{:for => "inputPassword"} Password
+                  .col-sm-10
+                    %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}/
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            %form.form-inline
-              .form-group.mb-2
-                %label.sr-only{:for => "staticEmail2"} Email
-                %input#staticEmail2.form-control-plaintext{:readonly => "readonly", :type => "text", :value => "email@example.com"}/
-              .form-group.mx-sm-3.mb-2
-                %label.sr-only{:for => "inputPassword2"} Password
-                %input#inputPassword2.form-control{:placeholder => "Password", :type => "password"}/
-              %button.btn.btn-primary.mb-2{:type => "submit"} Confirm identity
+            .section.mdc-card__primary  
+              %form.form-inline
+                .form-group.mb-2
+                  %label.sr-only{:for => "staticEmail2"} Email
+                  %input#staticEmail2.form-control-plaintext{:readonly => "readonly", :type => "text", :value => "email@example.com"}/
+                .form-group.mx-sm-3.mb-2
+                  %label.sr-only{:for => "inputPassword2"} Password
+                  %input#inputPassword2.form-control{:placeholder => "Password", :type => "password"}/
+                %button.btn.btn-primary.mb-2{:type => "submit"} Confirm identity
+          
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            .form-check
-              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
-              %label.form-check-label{:for => "defaultCheck1"}
-                Default checkbox
-            .form-check
-              %input#defaultCheck2.form-check-input{:disabled => "disabled", :type => "checkbox", :value => ""}/
-              %label.form-check-label{:for => "defaultCheck2"}
-                Disabled checkbox
+            .section.mdc-card__primary
+              .form-check
+                %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+                %label.form-check-label{:for => "defaultCheck1"}
+                  Default checkbox
+              .form-check
+                %input#defaultCheck2.form-check-input{:disabled => "disabled", :type => "checkbox", :value => ""}/
+                %label.form-check-label{:for => "defaultCheck2"}
+                  Disabled checkbox
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            .form-check
-              %input#exampleRadios1.form-check-input{:checked => "checked", :name => "exampleRadios", :type => "radio", :value => "option1"}/
-              %label.form-check-label{:for => "exampleRadios1"}
-                Default radio
-            .form-check
-              %input#exampleRadios2.form-check-input{:name => "exampleRadios", :type => "radio", :value => "option2"}/
-              %label.form-check-label{:for => "exampleRadios2"}
-                Second default radio
-            .form-check.disabled
-              %input#exampleRadios3.form-check-input{:disabled => "disabled", :name => "exampleRadios", :type => "radio", :value => "option3"}/
-              %label.form-check-label{:for => "exampleRadios3"}
-                Disabled radio
+            .section.mdc-card__primary
+              .form-check
+                %input#exampleRadios1.form-check-input{:checked => "checked", :name => "exampleRadios", :type => "radio", :value => "option1"}/
+                %label.form-check-label{:for => "exampleRadios1"}
+                  Default radio
+              .form-check
+                %input#exampleRadios2.form-check-input{:name => "exampleRadios", :type => "radio", :value => "option2"}/
+                %label.form-check-label{:for => "exampleRadios2"}
+                  Second default radio
+              .form-check.disabled
+                %input#exampleRadios3.form-check-input{:disabled => "disabled", :name => "exampleRadios", :type => "radio", :value => "option3"}/
+                %label.form-check-label{:for => "exampleRadios3"}
+                  Disabled radio
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            .form-check.form-check-inline
-              %input#inlineCheckbox1.form-check-input{:type => "checkbox", :value => "option1"}/
-              %label.form-check-label{:for => "inlineCheckbox1"} 1
-            .form-check.form-check-inline
-              %input#inlineCheckbox2.form-check-input{:type => "checkbox", :value => "option2"}/
-              %label.form-check-label{:for => "inlineCheckbox2"} 2
-            .form-check.form-check-inline
-              %input#inlineCheckbox3.form-check-input{:disabled => "disabled", :type => "checkbox", :value => "option3"}/
-              %label.form-check-label{:for => "inlineCheckbox3"} 3 (disabled)
+            .section.mdc-card__primary
+              .form-check.form-check-inline
+                %input#inlineCheckbox1.form-check-input{:type => "checkbox", :value => "option1"}/
+                %label.form-check-label{:for => "inlineCheckbox1"} 1
+              .form-check.form-check-inline
+                %input#inlineCheckbox2.form-check-input{:type => "checkbox", :value => "option2"}/
+                %label.form-check-label{:for => "inlineCheckbox2"} 2
+              .form-check.form-check-inline
+                %input#inlineCheckbox3.form-check-input{:disabled => "disabled", :type => "checkbox", :value => "option3"}/
+                %label.form-check-label{:for => "inlineCheckbox3"} 3 (disabled)
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            .form-check.form-check-inline
-              %input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}/
-              %label.form-check-label{:for => "inlineRadio1"} 1
-            .form-check.form-check-inline
-              %input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2"}/
-              %label.form-check-label{:for => "inlineRadio2"} 2
-            .form-check.form-check-inline
-              %input#inlineRadio3.form-check-input{:disabled => "disabled", :name => "inlineRadioOptions", :type => "radio", :value => "option3"}/
-              %label.form-check-label{:for => "inlineRadio3"} 3 (disabled)
+            .section.mdc-card__primary
+              .form-check.form-check-inline
+                %input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}/
+                %label.form-check-label{:for => "inlineRadio1"} 1
+              .form-check.form-check-inline
+                %input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2"}/
+                %label.form-check-label{:for => "inlineRadio2"} 2
+              .form-check.form-check-inline
+                %input#inlineRadio3.form-check-input{:disabled => "disabled", :name => "inlineRadioOptions", :type => "radio", :value => "option3"}/
+                %label.form-check-label{:for => "inlineRadio3"} 3 (disabled)
+        
         .mdc-layout-grid__cell.stretch-card.mdc-layout-grid__cell--span-12
           .mdc-card
-            .form-check
-              %input#blankCheckbox.form-check-input.position-static{"aria-label" => "...", :type => "checkbox", :value => "option1"}/
-            .form-check
-              %input#blankRadio1.form-check-input.position-static{"aria-label" => "...", :name => "blankRadio", :type => "radio", :value => "option1"}/
+            .section.mdc-card__primary
+              .form-check
+                %input#blankCheckbox.form-check-input.position-static{"aria-label" => "...", :type => "checkbox", :value => "option1"}/
+              .form-check
+                %input#blankRadio1.form-check-input.position-static{"aria-label" => "...", :name => "blankRadio", :type => "radio", :value => "option1"}/
